@@ -22,9 +22,9 @@ function App() {
   ]
 
   return (
-    <div className="font-serif w-full h-screen bg-yellow-300">
+    <div className="font-serif w-full h-screen bg-yellow-300 flex justify-center items-center">
 
-        <div className="max-w-2xl h-screen mx-auto flex flex-col gap-5">
+        <div className="max-w-2xl  mx-auto flex flex-col gap-5">
           
           <div className="h-48 w-48 mx-auto">
             <div className="aspect-w-1 aspect-h1">
@@ -41,10 +41,10 @@ function App() {
             {links.map(({text,link,color}, index) => {
 
               return(
-                <a href={links} key={index}>
+                <a href={links} key={index} target="_blank">
                   
-                  <div className={`w-96 mx-auto rounded-xl ${color}`}>
-                    <h1 className="text-center text-xl py-3 border-2 border-slate-900 rounded-xl shadow box-shadow">{text}</h1>
+                  <div className={`w-80 sm:w-96 mx-auto ${color} text-center text-xl py-3 border-2 border-slate-900  shadow-lg shadow-indigo-500/50 hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}>
+                    <h1 className="">{text}</h1>
                   </div>
                   
                 </a>

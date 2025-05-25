@@ -1,4 +1,5 @@
 import profile from "./assets/prfile.jpg"
+import './index.css'
 
 function App() {
 
@@ -37,21 +38,31 @@ function App() {
             <p className="text-lg m-3" >A personal bio is a concise summary of who you are, what you do, and what you're passionate about. It can be used for various purposes, such as social media profiles, websites, or professional networking platforms</p>
           </div>
 
-          <div className="flex flex-col gap-10">
+
+
+
+
+
+          <div className="mx-auto  flex flex-col gap-10">
             {links.map(({text,link,color}, index) => {
 
               return(
-                <a href={links} key={index} target="_blank">
+                <a class="bt more-bt" href={links} key={index} target="_blank">
                   
-                  <div className={`w-80 sm:w-96 mx-auto ${color} text-center text-xl py-3 border-2 border-slate-900  shadow-lg shadow-indigo-500/50 hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}>
-                    <h1 className="">{text}</h1>
-                  </div>
+                 <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
+        <p>{text}</p>
+    </a>
                   
-                </a>
+                
               )
 
             })}
           </div>
+
+
+
+
+
 
         </div>
 

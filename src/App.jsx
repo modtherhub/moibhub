@@ -49,11 +49,12 @@ function App() {
               return(
                 <a class="bt more-bt" href={links} key={index} target="_blank">
                   
-                 <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
-        <p>{text}</p>
-    </a>
-                  
-                
+                  <span class="fl"></span>
+                  <span class="sfl">
+                  </span><span class="cross">
+                  </span><i></i>
+                  <p>{text}</p>
+                </a>
               )
 
             })}

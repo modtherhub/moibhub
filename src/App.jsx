@@ -6,7 +6,7 @@ function App() {
   const links = [
     {
       color:"bg-red-300",
-      link:"https://github.com",
+      link:"https://github.com/modtherhub",
       text:"GitHub Account",
     },
     {
@@ -23,7 +23,8 @@ function App() {
   ]
 
   return (
-    <div className="font-serif w-full h-screen bg-yellow-300 flex justify-center items-center">
+    <div className="font-serif w-full h-screen bg-yellow-300 flex justify-center items-center
+    ">
 
         <div className="max-w-2xl  mx-auto flex flex-col gap-5">
           
@@ -47,14 +48,13 @@ function App() {
             {links.map(({text,link,color}, index) => {
 
               return(
-                <a class="bt more-bt" href={links} key={index} target="_blank">
-                  
-                  <span class="fl"></span>
-                  <span class="sfl">
-                  </span><span class="cross">
-                  </span><i></i>
-                  <p>{text}</p>
-                </a>
+                <a href={link} key={index} target="_blank">
+						      <div
+							    className={`w-80 sm:w-96 mx-auto ${color} text-center text-xl font-bold py-3 border-2 border-black shadow-custom hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}
+						     >
+							    {text}
+						      </div>
+					      </a>
               )
 
             })}

@@ -23,8 +23,7 @@ function App() {
   ]
 
   return (
-    <div className="font-serif w-full h-screen bg-yellow-300 flex justify-center items-center
-    ">
+    <div className="font-serif w-full h-screen bg-yellow-300 flex justify-center items-center">
 
         <div className="max-w-2xl  mx-auto flex flex-col gap-5">
           
